@@ -55,4 +55,4 @@ function refreshUserList() {
 refreshUserList();
 
 // Refresh the user list every 10 seconds
-setInterval(refreshUser List, 10000);
+setInterval(refreshUserList(), 10000);
