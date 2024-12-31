@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+#countdown-timer {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#user-timezones {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
