@@ -43,7 +43,7 @@ if (!users.includes(userTimeZone)) {
 }
 
 // Function to refresh the user list
-function refreshUser List() {
+function refreshUserList() {
     const userTimezonesDiv = document.getElementById("user-timezones");
     userTimezonesDiv.innerHTML = ""; // Clear existing users
     users.forEach(timeZone => {
@@ -52,7 +52,7 @@ function refreshUser List() {
 }
 
 // Initial display of users
-refreshUser List();
+refreshUserList();
 
 // Refresh the user list every 10 seconds
 setInterval(refreshUser List, 10000);
