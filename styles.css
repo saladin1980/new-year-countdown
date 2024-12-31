@@ -11,12 +11,7 @@ body {
     margin: auto;
 }
 
-#countdown-timer {
-    font-size: 2em;
-    margin: 20px 0;
-}
-
-#user-timezones {
-    margin-top: 20px;
+.user {
+    margin: 10px 0;
     font-size: 1.2em;
 }
