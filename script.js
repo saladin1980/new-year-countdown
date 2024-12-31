@@ -1,5 +1,5 @@
 // Countdown Timer
-const countdownDate = new Date("December 31, 2024 23:59:59").getTime();
+const countdownDate = new Date("January 1, 2025 00:00:00").getTime();
 const countdownElement = document.getElementById("countdown-timer");
 
 const x = setInterval(function() {
