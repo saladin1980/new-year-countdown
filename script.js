@@ -22,7 +22,7 @@ const x = setInterval(function() {
 // Get User Time Zone
 const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-// Display User Time Zone
+// Function to add user time zone to the list
 function addUserTimeZone(timeZone) {
     const userTimezonesDiv = document.getElementById("user-timezones");
     const newUser  = document.createElement("div");
@@ -30,5 +30,16 @@ function addUserTimeZone(timeZone) {
     userTimezonesDiv.appendChild(newUser );
 }
 
-// Add the user's time zone to the list
-addUserTimeZone(userTimeZone);
+// Check local storage for existing users
+let users = JSON.parse(localStorage.getItem("users")) || [];
+
+// If the user is not already in the list, add them
+if (!users.includes(userTimeZone)) {
+    users.push(userTimeZone);
+    localStorage.setItem("users", JSON.stringify(users));
+}
+
+// Display all users
+users.forEach(timeZone => {
+    addUserTimeZone(timeZone);
+});
