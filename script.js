@@ -23,7 +23,7 @@ const x = setInterval(function() {
 const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 // Display User Time Zone
-function addUser TimeZone(timeZone) {
+function addUserTimeZone(timeZone) {
     const userTimezonesDiv = document.getElementById("user-timezones");
     const newUser  = document.createElement("div");
     newUser .innerHTML = `User  from: ${timeZone}`;
@@ -31,4 +31,4 @@ function addUser TimeZone(timeZone) {
 }
 
 // Add the user's time zone to the list
-addUser TimeZone(userTimeZone);
+addUserTimeZone(userTimeZone);
